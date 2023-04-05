@@ -95,6 +95,8 @@ input {
 	cursor: pointer;
 	padding: .8rem;
 	right: .5rem;
+	z-index: 1020;
+	opacity: 2;
 }
 
 .trash_can_style svg {
