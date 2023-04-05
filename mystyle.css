@@ -12,6 +12,10 @@ body {
 	background-color: #4682b4;
 }
 
+button {
+	border: none;
+}
+
 #container {
 	background-color: #f5f5f5;
 	display: flex;
@@ -105,13 +109,13 @@ input {
 	transform: scale(1.1);
 }
 
-.todo_list_container .unordered_list {
+.unordered_list {
 	display: flex;
 	flex-direction: column;
 	gap: .2rem;
 }
 
-.todo_list_container .unordered_list li {
+.list_style {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -122,4 +126,9 @@ input {
 	background-color: #4682b4;
 	color: #f5f5f5;
 	padding: 0.5rem 1rem;
+}
+
+.complete_task {
+	filter: grayscale(100%);
+	text-decoration: line-through;
 }
