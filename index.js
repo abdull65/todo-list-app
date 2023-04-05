@@ -50,7 +50,7 @@ function createTodoItem(item) {
 
   unorderedListEl.appendChild(todoListItem);
 
-  trashCanEl.addEventListener("dblclick", () => {
+  trashCanEl.addEventListener("click", () => {
     todoItems = todoItems.filter((value) => value !== item);
     localStorage.setItem("todoValues", JSON.stringify(todoItems));
     todoListItem.remove();
